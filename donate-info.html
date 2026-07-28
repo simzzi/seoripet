@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>후원</title>
+  <link rel="shortcut icon" href="image/seoripet_logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="goto-top">
+    <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+  </div>
+  <div class="goto-bottom">
+    <a href="#footer"><i class="fa-solid fa-angle-down"></i></a>
+  </div>
+
+  <header data-include="header.html"></header>
+
+  <main id="sub-main">
+    <!-- <div class="donate-main-banner">
+      <img src="image/donate-banner.png" alt="후원 배너">
+    </div> -->
+    <section class="adopt-hero">
+      <div class="adopt-hero-img">
+        <img src="image/donate-banner-4.png" alt="강아지와 고양이">
+      </div>
+
+      <div class="adopt-hero-inner">
+        <div class="adopt-hero-text">
+          <p class="adopt-hero-label">DONATE</p>
+          <h1>따뜻한 관심이 만든<br><strong>특별한 변화</strong></h1>
+          <p class="adopt-hero-sub">여러분의 후원이 새로운 삶과 희망을 선물합니다</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="sub-inner">
+      <!-- 왼쪽 서브 메뉴 -->
+      <aside class="sub-menu">
+        <h2>DONATE</h2>
+        <p>아이들의 생활을 지원해주세요.</p>
+
+        <ul>
+          <li>
+            <a href="donate-info.html" class="sub-btn" data-page="후원신청">
+              후원신청
+            </a>
+          </li>
+          <li>
+            <a href="impact-report.html" class="sub-btn" data-page="후원보고">
+              후원보고
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- 오른쪽 경로 영역 -->
+      <section id="donation-content">
+        <div class="sub-content">
+          <nav class="breadcrumb">
+            <a href="index.html">HOME</a>
+            <span>›</span>
+            <a href="donate-info.html">후원</a>
+            <span>›</span>
+            <strong>후원신청</strong>
+          </nav>
+        </div>
+      
+        <!-- 후원 탭 -->
+        <div class="donation-tabs">
+          <button type="button" class="donation-tab active" data-target="medical">의료 후원</button>
+          <button type="button" class="donation-tab" data-target="shelter">쉼터 후원</button>
+          <button type="button" class="donation-tab" data-target="rescue">구조 후원</button>
+        </div>
+
+        <!-- 탭 내용 -->
+        <div class="donation-panels">
+
+          <div class="donation-panel active" id="medical">
+            <span class="donation-label">Medical Support</span>
+            <h3>심장사상충 치료 지원</h3>
+            <p>
+              심장사상충 진단을 받은 구조견들의 치료비 마련을 위한 후원 프로젝트입니다.
+            </p>
+
+            <div class="donation-progress">
+              <div class="donation-progress-info">
+                <strong>8,270,000원</strong>
+                <span>목표 7,500,000원</span>
+              </div>
+              <div class="donation-progress-bar">
+                <span data-width="100%"></span>
+              </div>
+              <p class="donation-progress-percent">110% 달성</p>
+            </div>
+
+            <div class="btn-wrap">
+              <button type="button" class="open-form-btn" data-title="심장사상충 치료">
+                후원하기
+              </button>
+            </div>
+          </div>
+
+          <div class="donation-panel" id="shelter">
+            <span class="donation-label">Shelter Support</span>
+            <h3>따뜻한 쉼터 환경 개선</h3>
+            <p>
+              보호 동물들이 안전하고 쾌적하게 지낼 수 있도록 시설 관리와 환경 개선을 지원합니다.
+            </p>
+
+            <div class="donation-progress">
+              <div class="donation-progress-info">
+                <strong>4,320,000원</strong>
+                <span>목표 6,000,000원</span>
+              </div>
+              <div class="donation-progress-bar">
+                <span data-width="72%"></span>
+              </div>
+              <p class="donation-progress-percent">72% 달성</p>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" class="open-form-btn" data-title="따뜻한 쉼터 환경">
+                후원하기
+              </button>
+            </div>
+          </div>
+
+          <div class="donation-panel" id="rescue">
+            <span class="donation-label">Rescue Support</span>
+            <h3>긴급 구조 치료비 지원</h3>
+            <p>
+              학대 및 방치된 유기동물의 긴급 구조와 응급 치료를 위한 후원 프로젝트입니다.
+            </p>
+
+            <div class="donation-progress">
+              <div class="donation-progress-info">
+                <strong>6,420,000원</strong>
+                <span>목표 10,000,000원</span>
+              </div>
+              <div class="donation-progress-bar">
+                <span data-width="64%"></span>
+              </div>
+              <p class="donation-progress-percent">64% 달성</p>
+            </div>
+
+            <div class="btn-wrap">
+              <button type="button" class="open-form-btn" data-title="긴급 구조 치료비">
+                후원하기
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 하단 확장 폼 -->
+        <div class="donation-form-wrap" id="donationFormWrap">
+          <form class="donation-form" id="donationForm">
+            <h3 id="formTitle">후원 신청</h3>
+            <p>서리펫의 아이들을 위한 따뜻한 마음을 전해주세요.</p>
+
+            <input type="hidden" name="donation_type" id="donationType">
+
+            <div class="form-row">
+              <label for="userName">이름</label>
+              <input type="text" id="userName" name="name" placeholder="이름을 입력해주세요" required>
+            </div>
+
+            <div class="form-row">
+              <label for="userPhone">연락처</label>
+              <input type="tel" id="userPhone" name="phone" placeholder="010-0000-0000" required>
+            </div>
+
+            <div class="form-row">
+              <label for="userEmail">이메일</label>
+              <input type="email" id="userEmail" name="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-row">
+              <label>후원 금액</label>
+
+              <div class="amount-list">
+                <label>
+                  <input type="radio" name="amount" value="10000" required>
+                  <span>1만원</span>
+                </label>
+
+                <label>
+                  <input type="radio" name="amount" value="30000">
+                  <span>3만원</span>
+                </label>
+
+                <label>
+                  <input type="radio" name="amount" value="50000">
+                  <span>5만원</span>
+                </label>
+
+                <label>
+                  <input type="radio" name="amount" value="custom" id="customAmountRadio">
+                  <span>기타</span>
+                </label>
+              </div>
+
+              <input type="donate-number" id="customAmount" class="custom-amount" placeholder="후원 금액을 입력해주세요">
+            </div>
+
+            <div class="form-row">
+              <label for="donate-message">응원 메시지</label>
+              <textarea id="donate-message" name="message" placeholder="아이들에게 전하고 싶은 말을 남겨주세요"></textarea>
+            </div>
+
+            <div class="btn-wrap">
+              <button type="submit" class="donate-submit-btn">후원 신청하기</button>
+            </div>
+          </form>
+        </div>
+
+      </section>
+
+      <!-- 완료 모달 -->
+      <div class="donation-modal" id="donationModal">
+        <div class="modal-box">
+          <button type="button" class="modal-close" id="modalClose">×</button>
+          <h3>후원이 완료되었습니다</h3>
+          <p>소중한 마음에 진심으로 감사드립니다.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer data-include="footer.html" id="footer"></footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><!-- Supabase CDN -->
+  <script>
+    const SUPABASE_URL = "https://igkdirbivpzdnkyswelx.supabase.co";
+    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlna2RpcmJpdnB6ZG5reXN3ZWx4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyMTAzNjAsImV4cCI6MjA5Njc4NjM2MH0.WhQ1nPE2rOrsuJLMYyBz7nlnPq3WBCaIcbAvxTbBprw";
+
+    const supabaseClient = supabase.createClient(
+      SUPABASE_URL,
+      SUPABASE_ANON_KEY
+    );
+  </script>
+	<script src="js/includeHTML.js"></script>
+	<script src="js/includeRouter.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/sub.js"></script>
+	<script>
+    includeHTML(() => {
+    mobileMenu();
+
+    includeRouter(() => {
+      mobileMenu();
+    });
+  });
+</script>
+</body>
+</html>

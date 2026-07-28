@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>봉사</title>
+  <link rel="shortcut icon" href="image/seoripet_logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="goto-top">
+    <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+  </div>
+  <div class="goto-bottom">
+    <a href="#footer"><i class="fa-solid fa-angle-down"></i></a>
+  </div>
+
+  <header data-include="header.html"></header>
+
+  <main id="sub-main">
+    <!-- <div>
+      <div class="donate-main-banner">
+        <img src="image/volunteer_banner.png" alt="강아지와 고양이">
+      </div>
+    </div> -->
+    <section class="adopt-hero">
+      <div class="adopt-hero-img">
+        <img src="image/volunteer_banner.png" alt="강아지와 고양이">
+      </div>
+
+      <div class="adopt-hero-inner">
+        <div class="adopt-hero-text">
+          <p class="adopt-hero-label">VOLUNTEER</p>
+          <h1>함께하는 시간만으로도,<br><strong>큰 위로가 됩니다</strong></h1>
+          <p class="adopt-hero-sub">누구나 함께할 수 있는 봉사 이야기</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="sub-inner">
+      <section class="volunteer-section">
+        <h2>봉사활동 일정</h2>
+        <p>날짜를 선택하면 해당 봉사 일정을 확인할 수 있어요.</p>
+
+        <div class="calender-wrap" >
+          <div class="volunteer-calender" id="vCalender">
+            <div class="calender-box">
+              <div class="calender-header">
+                <button id="prevMonth" type="button">‹</button>
+                <h3 id="monthTitle">2026년 6월</h3>
+                <button id="nextMonth" type="button">›</button>
+              </div>
+      
+              <div class="weekdays">
+                <span>일</span>
+                <span>월</span>
+                <span>화</span>
+                <span>수</span>
+                <span>목</span>
+                <span>금</span>
+                <span>토</span>
+              </div>
+      
+              <div class="dates" id="dates"></div>
+      
+              <div class="legend">
+                <div><i class="green"></i> <span>신청 가능</span></div>
+                <div><i class="orange"></i> <span>마감 임박</span></div>
+                <div><i class="gray"></i> <span>마감</span></div>
+              </div>
+            </div>
+      
+            <div class="schedule-box" id="scheduleBox">
+              <div class="schedule-title">
+                <h3 id="selectedDate">날짜를 선택해주세요</h3>
+                <span id="scheduleCount">총 0건의 일정</span>
+              </div>
+      
+              <div id="scheduleContent">
+                <div class="empty-schedule">
+                  날짜를 선택해주세요 🐾
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="volunteer-notice">
+            <h3>주의사항</h3>
+            <p>안전하고 즐거운 봉사활동을 위해 꼭 지켜주세요.</p>
+
+            <ul class="notice-list">
+              <li>
+                <span>01</span>
+                <strong>위생 수칙 준수</strong>
+                <p>봉사 전후 손 소독을 해주세요.</p>
+              </li>
+              <li>
+                <span>02</span>
+                <strong>반려동물 동반 제한</strong>
+                <p>보호소 내 반려동물 동반은 제한됩니다.</p>
+              </li>
+              <li>
+                <span>03</span>
+                <strong>안내에 따라 행동</strong>
+                <p>담당자의 안내를 따라주세요.</p>
+              </li>
+              <li>
+                <span>04</span>
+                <strong>조용히 배려하기</strong>
+                <p>큰 소리나 갑작스러운 행동은 삼가주세요.</p>
+              </li>
+              <li>
+                <span>05</span>
+                <strong>임의 급여 금지</strong>
+                <p>허가 없이 간식을 주지 마세요.</p>
+              </li>
+              <li>
+                <span>06</span>
+                <strong>취소 시 연락</strong>
+                <p>불참 시 최소 1일 전 연락해주세요.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  
+
+  <div class="apply-modal" id="applyModal">
+    <div class="apply-modal-inner">
+      <button class="close-modal" id="closeModal" type="button">✕</button>
+
+      <h3>봉사활동 신청</h3>
+      <p class="modal-desc">선택한 일정으로 바로 신청할 수 있어요.</p>
+
+      <form id="volunteerApplyForm" class="volunteer-apply-form">
+        <input type="hidden" id="applyDate" name="applyDate">
+        <input type="hidden" id="applyTitle" name="applyTitle">
+        <input type="hidden" id="applyTime" name="applyTime">
+
+        <div class="selected-schedule">
+          <strong id="modalTitle"></strong>
+          <span id="modalDate"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="applicantName">이름</label>
+          <input type="text" id="applicantName" placeholder="이름을 입력해주세요" required>
+        </div>
+
+        <div class="form-row">
+          <label for="applicantPhone">연락처</label>
+          <input type="tel" id="applicantPhone" placeholder="010-0000-0000" required>
+        </div>
+
+        <button class="submit-btn " type="submit">신청하기</button>
+      </form>
+    </div>
+  </div>
+  <div class="volunteer-success-modal" id="volunteerSuccessModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="volunteerSuccessClose">×</button>
+      <h3>신청이 완료되었습니다!</h3>
+      <p>봉사활동 신청이 정상적으로 접수되었습니다.</p>
+    </div>
+  </div>
+
+  <footer data-include="footer.html" id="footer"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    const SUPABASE_URL = "https://igkdirbivpzdnkyswelx.supabase.co";
+    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlna2RpcmJpdnB6ZG5reXN3ZWx4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyMTAzNjAsImV4cCI6MjA5Njc4NjM2MH0.WhQ1nPE2rOrsuJLMYyBz7nlnPq3WBCaIcbAvxTbBprw";
+
+    const supabaseClient = supabase.createClient(
+      SUPABASE_URL,
+      SUPABASE_ANON_KEY
+    );
+  </script>
+	<script src="js/includeHTML.js"></script>
+	<script src="js/includeRouter.js"></script>
+  <script src="js/header.js"></script>
+	<script src="js/sub.js"></script>
+	<script>
+    includeHTML(() => {
+    mobileMenu();
+
+    includeRouter(() => {
+      mobileMenu();
+    });
+  });
+</script>
+</body>
+</html>
